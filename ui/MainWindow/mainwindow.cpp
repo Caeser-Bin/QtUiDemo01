@@ -26,7 +26,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::outputBtnClicked()
 {
-    std::cout<< "Hello World!"<<std::endl;
+    std::cout<< "八个雅鹿!"<<std::endl;
 }
 
 void MainWindow::outputBtn2Clicked()
