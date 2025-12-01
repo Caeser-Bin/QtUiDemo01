@@ -1,0 +1,8 @@
+//
+// Created by Caesar on 2025/12/2.
+//
+
+#ifndef QTUIDEMO_EVENTSYSTEM_H
+#define QTUIDEMO_EVENTSYSTEM_H
+
+#endif //QTUIDEMO_EVENTSYSTEM_H
