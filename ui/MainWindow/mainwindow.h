@@ -25,6 +25,10 @@ public:
     explicit MainWindow(QWidget* parent = nullptr);
     ~MainWindow() override;
 
+private:
+    void init();
+    void connectSlots();
+
 private slots:
     void outputBtnClicked();
     void outputBtn2Clicked();

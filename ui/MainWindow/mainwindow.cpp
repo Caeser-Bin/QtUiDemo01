@@ -14,14 +14,24 @@ MainWindow::MainWindow(QWidget* parent) :
     QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    connect( ui->outputBtn, &QPushButton::clicked, this, &MainWindow::outputBtnClicked);
-    connect( ui->outputBtn2, &QPushButton::clicked, this, &MainWindow::outputBtn2Clicked);
+    init();
+    connectSlots();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::init()
+{
+
+}
+
+void MainWindow::connectSlots()
+{
+    connect( ui->outputBtn, &QPushButton::clicked, this, &MainWindow::outputBtnClicked);
+    connect( ui->outputBtn2, &QPushButton::clicked, this, &MainWindow::outputBtn2Clicked);
 }
 
 void MainWindow::outputBtnClicked()
