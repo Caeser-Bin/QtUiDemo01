@@ -1,6 +1,6 @@
 make_module(eventImpl .)
 
-link_private_target(eventImpl eventCore)
+link_public_target(eventImpl eventCore)
 
 ## impl/CMakeLists.txt
 #cmake_minimum_required(VERSION 3.16)

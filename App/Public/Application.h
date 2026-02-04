@@ -6,9 +6,17 @@
 #define QTUIDEMO_APPLICATION_H
 
 
-class Application
-{
-};
+class Application {
+public:
+    explicit Application(int argc, char *argv[]);
+    ~Application();
+    int execute();
 
+private:
+    void initialize();
+    void cleanup();
+    int argc_;
+    char **argv_;
+};
 
 #endif //QTUIDEMO_APPLICATION_H

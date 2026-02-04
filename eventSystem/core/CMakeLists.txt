@@ -1,9 +1,10 @@
 make_module(eventCore .)
+link_public_target(eventCore Macros)
 
-## core/CMakeLists.txt
+# core/CMakeLists.txt
 #cmake_minimum_required(VERSION 3.16)
 #
-#set(LIB_NAME event_core)
+#set(LIB_NAME eventCore)
 #
 #project(${LIB_NAME})
 #
@@ -27,4 +28,4 @@ make_module(eventCore .)
 #target_include_directories(${LIB_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/public)
 #
 ## 如果需要导出符号（如在 Windows 上用 DLL），可添加：
-##set_target_properties(${LIB_NAME} PROPERTIES PREFIX "")
+#set_target_properties(${LIB_NAME} PROPERTIES PREFIX "")

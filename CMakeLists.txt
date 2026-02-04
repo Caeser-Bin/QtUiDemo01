@@ -13,6 +13,8 @@ include(BuildKits/loadScripts.cmake)
 add_subdirectory(ui)
 add_subdirectory(eventSystem)
 add_subdirectory(App)
+add_subdirectory(CommonMacros)
+add_subdirectory(business)
 
 add_executable(QtUiDemo main.cpp)
 

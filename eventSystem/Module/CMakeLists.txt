@@ -1,6 +1,10 @@
-make_module(eventSystem .)
-link_public_target(eventSystem eventCore)
-link_private_target(eventSystem eventImpl)
+make_module(eventModule .)
+
+link_private_target(eventModule eventImpl)
+link_public_target(eventModule Macros)
+link_public_target(eventModule App)
+
+link_public_target(eventModule eventCore)
 
 ## Module/CMakeLists.txt
 #cmake_minimum_required(VERSION 3.16)
